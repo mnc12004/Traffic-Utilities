@@ -18,6 +18,7 @@ class _LAMSScreenState extends State<LAMSScreen> {
   String imgUrl;
   String model;
 
+  //This is used to make sure the user is logged in for Firestore security rules
   void getCurrentUser() async {
     final user = await _auth.currentUser();
     try {
@@ -32,14 +33,12 @@ class _LAMSScreenState extends State<LAMSScreen> {
 
   @override
   void initState() {
-    
     super.initState();
     getCurrentUser();
   }
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         title: Text('L.A.M.S.'),
@@ -57,28 +56,28 @@ class LAMSList extends StatelessWidget {
       stream:
           _db.collection('lams').orderBy('brand').snapshots(),
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-        if (snapshot.hasError) return new Text('Error: ${snapshot.error}');
+        if (snapshot.hasError) return Text('Error: ${snapshot.error}');
         switch (snapshot.connectionState) {
           case ConnectionState.waiting:
-            return new Text('Loading...');
+            return Text('Loading...');
           default:
-            return new ListView(
+            return ListView(
               children:
                   snapshot.data.documents.map((DocumentSnapshot document) {
                 return Card(
                   margin: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
                   color: Colors.blue[800],
                   elevation: 10.0,
-                  child: new ListTile(
-                    title: new Text(
+                  child: ListTile(
+                    title: Text(
                       document['brand'],
                       style: TextStyle(color: Colors.white),
                     ),
-                    subtitle: new Text(
+                    subtitle: Text(
                       document['model'],
                       style: TextStyle(color: Colors.white70),
                     ),
-                    leading: new Image(
+                    leading: Image(
                       image: NetworkImage(document.data['image'].toString()),
                     ),
                   ),
