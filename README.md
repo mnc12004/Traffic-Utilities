@@ -1,4 +1,4 @@
-# Traffic-Utilities-v2
+# Traffic-Utilities
 A small set of tools for the Western Australian Policing community
 
 Now fully rebuilt in Flutter/Dart
@@ -30,7 +30,7 @@ The formula to achieve this is (-45 * 0.016) / 60 + 0.150<br><br>
 Of course there are other types of tests, but the example is the most common.
 
 <h2>Other Tools</h2>
-Western Australian Specific Tools:<br>
+<h3>Western Australian Specific Tools:</h3><br>
 <b>Offence Search System</b> - Approximately 700 of the most common used offences used on WA.<br>
 <b>L.A.M.S.</B> - A comprehensive list of Learner Approved Motorcycles (Firestore Data).<br>
 <b>Australian Registration Checks</b> - Vehicle registration Checks from each state and territiry in Australia. Enabling Law enforcement to conduct quick checks on visiting out of state vehicles.<br>
