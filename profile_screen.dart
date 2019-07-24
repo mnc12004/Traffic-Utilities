@@ -25,7 +25,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   void initState() {
     super.initState();
-
+// Biggest issue with this file is that getCurrentUser() doesn't get called for some reason.
+// It only gets called when the edit profile button is pressed????
     getCurrentUser();
   }
 
