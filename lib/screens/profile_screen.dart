@@ -19,8 +19,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   String emailAddress = 'Email';
   String workLocation = 'Forms of Government.';
   String regimental = 'PD12345';
-  String imageURL =
-      'https://firebasestorage.googleapis.com/v0/b/offencesearchsystem.appspot.com/o/assets%2Fanon.png?alt=media&token=bf11e3c7-be65-4645-95a1-64640dac028d';
+  String imageURL = <IMAGE FROM URL>
 
   @override
   void initState() {
@@ -57,7 +56,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     backgroundColor: Colors.white,
                     child: FadeInImage(
                       placeholder: NetworkImage(
-                          'https://trafficutilities.com.au/images/logo.png'),
+                          <IMAGE FROM URL>,
                       image: NetworkImage(imageURL),
                     ),
                   ),
@@ -291,7 +290,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             var profileImage = user.photoUrl;
 
             if (profileImage == null) {
-              profileImage = 'https://trafficutilities.com.au/images/logo.png';
+              profileImage = <IMAGE FROM URL>;
             }
 
             fullName = name;
