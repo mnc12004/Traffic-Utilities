@@ -16,7 +16,7 @@ It is perceived the count back is fairere for the person being tested, hoerver, 
 
 So, for now if a person provided a sample of BAC as 0.150 (Driving Under The Influence of Alcohol(DUI), in fairness there would be a calculation done resulting in a lesser pemnalty dependeant on the the amount of lapsed time from the occurrecne time to the test time...
 
-Occurence: 10:00 AM
+Occurence: 10:00 AM\n
 Test Time: 10:45 AM
 Elapsed time: -45 minutes
 Result from Draeger Alcotest 9510: 0.150
