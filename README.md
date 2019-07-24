@@ -33,6 +33,6 @@ Of course there are other types of tests, but the example is the most common.
 <h3>Western Australian Specific Tools:</h3><br>
 <b>Offence Search System</b> - Approximately 700 of the most common used offences used on WA.<br>
 <b>L.A.M.S.</B> - A comprehensive list of Learner Approved Motorcycles (Firestore Data).<br>
-<b>Australian Registration Checks</b> - Vehicle registration Checks from each state and territiry in Australia. Enabling Law enforcement to conduct quick checks on visiting out of state vehicles.<br>
+<b>Australian Registration Checks</b> - Vehicle registration Checks from each state and territory in Australia. Enabling Law enforcement to conduct quick checks on visiting out of state vehicles.<br>
 <b>Where Am I?</b> - Google Maps enabled to show where you are quickly. Useful when writing infringements and you need a cross street.<br>
 <b>My Links</b> - Create your own links and display them in a card view. Tap the card to navigate to the built in web browser.</br>
